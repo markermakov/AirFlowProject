@@ -1,0 +1,29 @@
+[2022-05-02 22:50:02,728] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL.main scheduled__2022-05-02T18:00:00+00:00 [queued]>
+[2022-05-02 22:50:02,778] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL.main scheduled__2022-05-02T18:00:00+00:00 [queued]>
+[2022-05-02 22:50:02,780] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-02 22:50:02,782] {taskinstance.py:1239} INFO - Starting attempt 12 of 13
+[2022-05-02 22:50:02,783] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-02 22:50:02,831] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): main> on 2022-05-02 18:00:00+00:00
+[2022-05-02 22:50:02,841] {standard_task_runner.py:52} INFO - Started process 2076 to run task
+[2022-05-02 22:50:02,852] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'ETL', 'main', 'scheduled__2022-05-02T18:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpfx5h59bx', '--error-file', '/tmp/tmpp_jmfujq']
+[2022-05-02 22:50:02,855] {standard_task_runner.py:77} INFO - Job 13: Subtask main
+[2022-05-02 22:50:03,000] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL.main scheduled__2022-05-02T18:00:00+00:00 [running]> on host 9f1b8837587a
+[2022-05-02 22:50:03,156] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ETL
+AIRFLOW_CTX_TASK_ID=main
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-02T18:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-02T18:00:00+00:00
+[2022-05-02 22:50:03,548] {logging_mixin.py:109} INFO - ['BTC/USD', '2022-05-02 22:50:03', 38977.85]
+[2022-05-02 22:50:03,557] {logging_mixin.py:109} INFO - 'etl' exists in the DB!
+[2022-05-02 22:50:03,664] {logging_mixin.py:109} INFO -   currency_pair          created_on  current_rate
+0       BTC/USD 2022-05-02 22:44:55      38958.00
+1       BTC/USD 2022-05-02 22:48:38      38977.85
+2       BTC/USD 2022-05-02 22:50:03      38977.85
+[2022-05-02 22:50:03,667] {logging_mixin.py:109} INFO - 
+[2022-05-02 22:50:03,669] {python.py:175} INFO - Done. Returned value was: None
+[2022-05-02 22:50:03,704] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=ETL, task_id=main, execution_date=20220502T180000, start_date=20220502T225002, end_date=20220502T225003
+[2022-05-02 22:50:03,788] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-05-02 22:50:03,885] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
